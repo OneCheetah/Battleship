@@ -39,9 +39,9 @@ public final class GameManager {
                 enemyPlayer = player1;
             }
 
-            currentPlayer.printBoard(currentPlayer.getHiddenBoard());
+            Board2D.printBoard(currentPlayer.getHiddenBoard());
             System.out.println("---------------------");
-            currentPlayer.printBoard(currentPlayer.getGameBoard());
+            Board2D.printBoard(currentPlayer.getGameBoard());
 
             if (isPlayer1Turn) {
                 System.out.println("Player 1, it's your turn:");
@@ -168,6 +168,7 @@ public final class GameManager {
         return true;
     }
 
+    @SuppressWarnings({"unused", "ResultOfMethodCallIgnored"})
     public static void awaitInput() {
         System.out.println("Press Enter and pass the move to another player");
         try {

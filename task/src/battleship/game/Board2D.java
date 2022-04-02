@@ -31,7 +31,7 @@ public final class Board2D extends BoardManager{
      * Prints out the game board
      * @param gameBoard The game board you want printed
      */
-    public void printBoard(String[][] gameBoard) {
+    public static void printBoard(String[][] gameBoard) {
         char letter = 'A';
         for (int i = 0; i < gameBoard.length + 1; i++) {
             if (i == 0) {

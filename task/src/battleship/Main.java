@@ -1,6 +1,5 @@
 package battleship;
 
-
 import battleship.game.BattleField;
 
 public class Main {

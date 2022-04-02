@@ -39,12 +39,12 @@ public final class BattleField {
      */
     private void prepare(Board2D player2) {
         for (Ship ship : ships) {
-            player2.printBoard(player2.getGameBoard());
+            Board2D.printBoard(player2.getGameBoard());
 
             System.out.println("Enter the coordinates of the " + ship.getName() + " (" + ship.getLength() + " cells):");
             player2.placeShips(ship, player2.getGameBoard());
         }
-        player1.printBoard(player2.getGameBoard());
+        Board2D.printBoard(player2.getGameBoard());
 
         GameManager.awaitInput();
     }

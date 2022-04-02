@@ -110,57 +110,41 @@ public final class GameManager {
         int l = 1;
 
         // South Check
-        while (true) {
-            if (x + i < 10) {
-                if (player.getGameBoard()[x + i][y].equals("~")) {
-                    break;
-                } else if ((player.getGameBoard()[x + i][y].equals("O"))) {
-                    return false;
-                }
-            } else {
+        while (x + i < 10) {
+            if (player.getGameBoard()[x + i][y].equals("~")) {
                 break;
+            } else if ((player.getGameBoard()[x + i][y].equals("O"))) {
+                return false;
             }
             i++;
         }
 
         // North Check
-        while (true) {
-            if (x - j >= 0) {
-                if (Objects.equals(player.getGameBoard()[x - j][y], "~")) {
-                    break;
-                } else if (Objects.equals(player.getGameBoard()[x - j][y], "O")) {
-                    return false;
-                }
-            } else {
+        while (x - j >= 0) {
+            if (Objects.equals(player.getGameBoard()[x - j][y], "~")) {
                 break;
+            } else if (Objects.equals(player.getGameBoard()[x - j][y], "O")) {
+                return false;
             }
             j++;
         }
 
         // East Check
-        while (true) {
-            if (y + k < 10) {
-                if (Objects.equals(player.getGameBoard()[x][y + k], "~")) {
-                    break;
-                } else if (Objects.equals(player.getGameBoard()[x][y + k], "O")) {
-                    return false;
-                }
-            } else {
+        while (y + k < 10) {
+            if (Objects.equals(player.getGameBoard()[x][y + k], "~")) {
                 break;
+            } else if (Objects.equals(player.getGameBoard()[x][y + k], "O")) {
+                return false;
             }
             k++;
         }
 
         // West Check
-        while (true) {
-            if (y - l >= 0) {
-                if (Objects.equals(player.getGameBoard()[x][y - l], "~")) {
-                    break;
-                } else if (Objects.equals(player.getGameBoard()[x][y - l], "O")) {
-                    return false;
-                }
-            } else {
+        while (y - l >= 0) {
+            if (Objects.equals(player.getGameBoard()[x][y - l], "~")) {
                 break;
+            } else if (Objects.equals(player.getGameBoard()[x][y - l], "O")) {
+                return false;
             }
             l++;
         }

@@ -13,12 +13,8 @@ public class BoardManager {
     private int y2;
 
     /**
-     *
-     * Checks weather or not the ship is the correct length
-     *
      * @param ship The current ship that we are checking
-     * @return boolean
-     *
+     * @return Weather or not the ship is the correct length
      */
     private boolean isProperLength(Ship ship) {
         if (x1 == x2) {
@@ -30,8 +26,7 @@ public class BoardManager {
     }
 
     /**
-     * Checks weather or not the location of the ship is valid
-     * @return boolean
+     * @return Weather or not the location of the ship is valid
      */
     private boolean isValidLocation() {
         return x1 == x2 || y1 == y2;

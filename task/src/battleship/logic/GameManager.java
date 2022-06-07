@@ -22,7 +22,7 @@ public final class GameManager {
     /**
      * This method is what starts the shooting/fighting process of the game
      */
-    public void ShootingSystem() {
+    public void shootingSystem() {
 
         Board2D currentPlayer;
         Board2D enemyPlayer;
@@ -55,7 +55,6 @@ public final class GameManager {
                 int y = Integer.parseInt(input.substring(1)) - 1;
 
                 if (enemyPlayer.getGameBoard()[x][y].equals("O") || enemyPlayer.getGameBoard()[x][y].equals("X")) {
-
                     if (enemyPlayer.getGameBoard()[x][y].equals("O")) {
                         if (isPlayer1Turn) {
                             player1HitShips++;
@@ -79,7 +78,6 @@ public final class GameManager {
                         System.out.println("You sank a ship! Specify a new target:");
                         awaitInput();
                     }
-
                 } else {
                     enemyPlayer.getGameBoard()[x][y] = "M";
                     currentPlayer.getHiddenBoard()[x][y] = "M";

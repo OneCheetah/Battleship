@@ -4,7 +4,7 @@ import battleship.logic.BoardManager;
 
 import java.util.Arrays;
 
-public final class Board2D extends BoardManager{
+public final class Board2D extends BoardManager {
     private final String[][] gameBoard = new String[10][10];
     private final String[][] hiddenBoard = new String[10][10];
 
@@ -29,6 +29,7 @@ public final class Board2D extends BoardManager{
 
     /**
      * Prints out the game board
+     *
      * @param gameBoard The game board you want printed
      */
     public static void printBoard(String[][] gameBoard) {

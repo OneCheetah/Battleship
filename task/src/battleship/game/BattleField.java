@@ -22,11 +22,11 @@ public final class BattleField {
         System.out.println("Player 2, place your ships to the game field");
         prepare(player2);
 
-        game.ShootingSystem();
+        game.shootingSystem();
     }
 
     /**
-     * Starts the prep phase of the game/placing of ships
+     * Starts the pre-game by asking users to place their ships
      */
     private void prepare(Board2D player) {
         for (Ship ship : ships) {

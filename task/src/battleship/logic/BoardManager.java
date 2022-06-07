@@ -13,7 +13,10 @@ public class BoardManager {
     private int y2;
 
     /**
+     * Checks if the length of the ship is valid
+     *
      * @param ship The current ship that we are checking
+     *
      * @return Weather or not the ship is the correct length
      */
     private boolean isProperLength(Ship ship) {
@@ -26,6 +29,8 @@ public class BoardManager {
     }
 
     /**
+     * Checks if the location is valid
+     *
      * @return Weather or not the location of the ship is valid
      */
     private boolean isValidLocation() {
@@ -34,7 +39,9 @@ public class BoardManager {
 
     /**
      * Checks weather are not the ship is too close/is colliding with another ship
+     *
      * @param gameBoard The current board we are using
+     *
      * @return boolean
      */
     private boolean isColliding(String[][] gameBoard) {
